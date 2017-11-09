@@ -1,7 +1,22 @@
-.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
+body {
+    background-image: url("/TwentyTwo/images/logo22.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+#background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    background-color: rgba(208,203,194,0.95);
+}
+
+#content {
+    color: black;
+    font-family: Candara;
+    position: relative;
+    padding-top: 50px;
 }
