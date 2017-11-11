@@ -16,6 +16,7 @@
 
     <!-- Local JS File -->
     <script type="text/javascript" src="../js/top.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
 
 <!--Remaining section-->
 
-<div class="container" style="padding-top: 70px">
+<div id="content"class="container" style="padding-top: 70px">
     <h1><strong>Best of</strong></h1>
     <a href="add.html"><h6>Soumettre un 22</h6></a>
     <ul class="list-group">
@@ -70,10 +71,10 @@
                 <div class="col-sm-2">
                     <div class="row">
                         <div class="col-sm-6">
-                            <button class="glyphicon glyphicon-ok" onclick="upVote(count_item1, this)"></button>
+                            <button id="up_item1" name="up_item1" class="glyphicon glyphicon-ok" onclick="upVote(count_item1, this, down_item1)"></button>
                         </div>
                         <div class="col-sm-6">
-                            <button class="glyphicon glyphicon-remove" onclick="downVote(count_item1, this)"></button>
+                            <button id="down_item1" name="down_item1" class="glyphicon glyphicon-remove" onclick="downVote(count_item1, this, up_item1)"></button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
         </li>
         <li class="list-group-item">
             <div class="row">
-                <div id="count_item2" name="count_item2" class="col-sm-1">120</div>
+                <div id="count_item2" name="count_item1" class="col-sm-1">1200</div>
                 <div class="col-sm-2">
                     Clément Faure
                 </div>
@@ -94,10 +95,10 @@
                 <div class="col-sm-2">
                     <div class="row">
                         <div class="col-sm-6">
-                            <button class="glyphicon glyphicon-ok" onclick="upVote(count_item2, this)"></button>
+                            <button id="up_item2" name="up_item2" class="glyphicon glyphicon-ok" onclick="upVote(count_item2, this, down_item2)"></button>
                         </div>
                         <div class="col-sm-6">
-                            <button class="glyphicon glyphicon-remove" onclick="downVote(count_item2, this)"></button>
+                            <button id="down_item2" name="down_item2" class="glyphicon glyphicon-remove" onclick="downVote(count_item2, this, up_item2)"></button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
         </li>
         <li class="list-group-item">
             <div class="row">
-                <div id="count_item3" name="count_item3" class="col-sm-1">10</div>
+                <div id="count_item3" name="count_item3" class="col-sm-1">1200</div>
                 <div class="col-sm-2">
                     Clément Faure
                 </div>
@@ -118,10 +119,10 @@
                 <div class="col-sm-2">
                     <div class="row">
                         <div class="col-sm-6">
-                            <button class="glyphicon glyphicon-ok" onclick="upVote(count_item3, this)"></button>
+                            <button id="up_item3" name="up_item3" class="glyphicon glyphicon-ok" onclick="upVote(count_item3, this, down_item3)"></button>
                         </div>
                         <div class="col-sm-6">
-                            <button class="glyphicon glyphicon-remove" onclick="downVote(count_item3, this)"></button>
+                            <button id="down_item3" name="down_item3" class="glyphicon glyphicon-remove" onclick="downVote(count_item3, this, up_item3)"></button>
                         </div>
                     </div>
                 </div>
