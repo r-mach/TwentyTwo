@@ -12,7 +12,7 @@
     <script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
 
     <!-- BootStrap JS lib -->
-    <script href="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
 
     <!-- Local JS File -->
     <script type="text/javascript" src="../js/top.js"></script>
@@ -24,6 +24,111 @@
 </header>
 
 <!--Remaining section-->
+
+<div class="container" style="padding-top: 70px">
+    <h1><strong>Best of</strong></h1>
+    <a href="add.html"><h6>Soumettre un 22</h6></a>
+    <ul class="list-group">
+        <li class="list-group-item disabled">
+            <div class="row">
+                <div class="col-sm-1">
+                    Votes
+                </div>
+                <div class="col-sm-2">
+                    Cible
+                </div>
+                <div class="col-sm-5">
+                    Description du 22
+                </div>
+                <div class="col-sm-2">
+                    Date limite
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="glyphicon glyphicon-arrow-up"></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="glyphicon glyphicon-arrow-down"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div id="count_item1" name="count_item1" class="col-sm-1">1200</div>
+                <div class="col-sm-2">
+                    Clément Faure
+                </div>
+                <div class="col-sm-5">
+                    Boire un long island cul sec
+                </div>
+                <div class="col-sm-2">
+                    10/12/2017
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="glyphicon glyphicon-ok" onclick="upVote(count_item1, this)"></button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="glyphicon glyphicon-remove" onclick="downVote(count_item1, this)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div id="count_item2" name="count_item2" class="col-sm-1">120</div>
+                <div class="col-sm-2">
+                    Clément Faure
+                </div>
+                <div class="col-sm-5">
+                    Boire un long island cul sec
+                </div>
+                <div class="col-sm-2">
+                    10/12/2017
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="glyphicon glyphicon-ok" onclick="upVote(count_item2, this)"></button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="glyphicon glyphicon-remove" onclick="downVote(count_item2, this)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div id="count_item3" name="count_item3" class="col-sm-1">10</div>
+                <div class="col-sm-2">
+                    Clément Faure
+                </div>
+                <div class="col-sm-5">
+                    Boire un long island cul sec
+                </div>
+                <div class="col-sm-2">
+                    10/12/2017
+                </div>
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="glyphicon glyphicon-ok" onclick="upVote(count_item3, this)"></button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="glyphicon glyphicon-remove" onclick="downVote(count_item3, this)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>
