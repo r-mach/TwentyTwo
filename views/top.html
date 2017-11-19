@@ -6,130 +6,82 @@
     <title>Top 22</title>
 
     <!-- BootStrap CSS lib -->
-    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/TwentyTwo/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/TwentyTwo/lib/bootstrap/css/DataTables-1.10.16/css/jquery.dataTables.css"/>
+
 
     <!-- JQuery lib -->
-    <script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/TwentyTwo/lib/jquery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/TwentyTwo/lib/bootstrap/css/DataTables-1.10.16/js/jquery.dataTables.js"></script>
 
     <!-- BootStrap JS lib -->
     <script src="../lib/bootstrap/js/bootstrap.js"></script>
 
     <!-- Local JS File -->
-    <script type="text/javascript" src="../js/top.js"></script>
-    <script type="text/javascript" src="../js/global.js"></script>
+    <script type="text/javascript" src="/TwentyTwo/js/global.js"></script>
+    <script type="text/javascript" src="/TwentyTwo/js/top.js"></script>
+    <link rel="stylesheet" href="/TwentyTwo/css/top.css">
 </head>
 <body>
+
+<!--Remaining section-->
+
+<div id="content" class="container" style="padding-top: 70px">
+    <h1><strong>Best of</strong></h1>
+    <a href="add.html"><h6>Soumettre un 22</h6></a>
+    <table id="topTwentyTwo" class="table table-striped table-bordered tableformat" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th style="text-align: center;">Nombre de vote</th>
+            <th>Cible</th>
+            <th>Description</th>
+            <th style="text-align: center;">Date du 22</th>
+            <th style="text-align: center;">Date Limite</th>
+            <th style="text-align: center;">Voter</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="1">
+            <td>50</td>
+            <td>Quentin Chaumont</td>
+            <td>Faire de la merde</td>
+            <td>10-11-2017</td>
+            <td>10-12-2017</td>
+            <td>
+                <button class="glyphicon glyphicon glyphicon-thumbs-up " style="color: green;" onclick="upVote(this)"></button>
+                <button class="glyphicon glyphicon-thumbs-down" style="color: red;" onclick="downVote(this)"></button>
+            </td>
+        </tr>
+        <tr id="2">
+            <td>100</td>
+            <td>Clément Faure</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae corporis, cumque delectus dicta dolorem enim eveniet expedita impedit incidunt molestias neque nostrum, placeat quasi sapiente sed sint suscipit!</td>
+            <td>10-11-2017</td>
+            <td>10-12-2017</td>
+            <td>
+                <button class="glyphicon glyphicon glyphicon-thumbs-up" style="color: green;" onclick="upVote(this)"></button>
+                <button class="glyphicon glyphicon-thumbs-down" style="color: red;" onclick="downVote(this)"></button>
+            </td>
+        </tr>
+        <tr id="3">
+            <td>200</td>
+            <td>Paul Germain</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores ducimus excepturi ipsum iusto nihil reiciendis rem saepe totam velit. Alias eveniet ipsam magnam mollitia quae recusandae rerum sapiente voluptate.</td>
+            <td>10-11-2017</td>
+            <td>10-12-2017</td>
+            <td>
+                <button class="glyphicon glyphicon glyphicon-thumbs-up" style="color: green;" onclick="upVote(this)"></button>
+                <button class="glyphicon glyphicon-thumbs-down" style="color: red;" onclick="downVote(this)"></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
 
 <header>
     <div id="header"></div>
 </header>
 
-<!--Remaining section-->
-
-<div id="content"class="container" style="padding-top: 70px">
-    <h1><strong>Best of</strong></h1>
-    <a href="add.html"><h6>Soumettre un 22</h6></a>
-    <ul class="list-group">
-        <li class="list-group-item disabled">
-            <div class="row">
-                <div class="col-sm-1">
-                    Votes
-                </div>
-                <div class="col-sm-2">
-                    Cible
-                </div>
-                <div class="col-sm-5">
-                    Description du 22
-                </div>
-                <div class="col-sm-2">
-                    Date limite
-                </div>
-                <div class="col-sm-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <span class="glyphicon glyphicon-arrow-up"></span>
-                        </div>
-                        <div class="col-sm-6">
-                            <span class="glyphicon glyphicon-arrow-down"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div id="count_item1" name="count_item1" class="col-sm-1">1200</div>
-                <div class="col-sm-2">
-                    Clément Faure
-                </div>
-                <div class="col-sm-5">
-                    Boire un long island cul sec
-                </div>
-                <div class="col-sm-2">
-                    10/12/2017
-                </div>
-                <div class="col-sm-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button id="up_item1" name="up_item1" class="glyphicon glyphicon-ok" onclick="upVote(count_item1, this, down_item1)"></button>
-                        </div>
-                        <div class="col-sm-6">
-                            <button id="down_item1" name="down_item1" class="glyphicon glyphicon-remove" onclick="downVote(count_item1, this, up_item1)"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div id="count_item2" name="count_item1" class="col-sm-1">1200</div>
-                <div class="col-sm-2">
-                    Clément Faure
-                </div>
-                <div class="col-sm-5">
-                    Boire un long island cul sec
-                </div>
-                <div class="col-sm-2">
-                    10/12/2017
-                </div>
-                <div class="col-sm-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button id="up_item2" name="up_item2" class="glyphicon glyphicon-ok" onclick="upVote(count_item2, this, down_item2)"></button>
-                        </div>
-                        <div class="col-sm-6">
-                            <button id="down_item2" name="down_item2" class="glyphicon glyphicon-remove" onclick="downVote(count_item2, this, up_item2)"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="row">
-                <div id="count_item3" name="count_item3" class="col-sm-1">1200</div>
-                <div class="col-sm-2">
-                    Clément Faure
-                </div>
-                <div class="col-sm-5">
-                    Boire un long island cul sec
-                </div>
-                <div class="col-sm-2">
-                    10/12/2017
-                </div>
-                <div class="col-sm-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button id="up_item3" name="up_item3" class="glyphicon glyphicon-ok" onclick="upVote(count_item3, this, down_item3)"></button>
-                        </div>
-                        <div class="col-sm-6">
-                            <button id="down_item3" name="down_item3" class="glyphicon glyphicon-remove" onclick="downVote(count_item3, this, up_item3)"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
-
-</body>
 </html>

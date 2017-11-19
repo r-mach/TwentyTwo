@@ -1,1 +1,3 @@
-var countPost = 4;
+$(function () {
+    $("#header").load("/TwentyTwo/views/navbar.html");
+})
