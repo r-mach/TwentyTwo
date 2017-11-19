@@ -18,6 +18,11 @@
     <!-- Local JS File -->
     <script type="text/javascript" src="/TwentyTwo/js/global.js"></script>
 </head>
+
+<header>
+    <?php include 'navbar.php'; ?>
+</header>
+
 <body>
 
 <!--Remaining section-->
@@ -75,10 +80,5 @@
 </div>
 
 </body>
-
-<header>
-    <div id="header"></div>
-</header>
-
 
 </html>

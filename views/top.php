@@ -22,13 +22,18 @@
     <script type="text/javascript" src="/TwentyTwo/js/top.js"></script>
     <link rel="stylesheet" href="/TwentyTwo/css/top.css">
 </head>
+
+<header>
+    <?php include 'navbar.php'; ?>
+</header>
+
 <body>
 
 <!--Remaining section-->
 
 <div id="content" class="container" style="padding-top: 70px">
     <h1><strong>Best of</strong></h1>
-    <a href="add.html"><h6>Soumettre un 22</h6></a>
+    <a href="add.php"><h6>Soumettre un 22</h6></a>
     <table id="topTwentyTwo" class="table table-striped table-bordered tableformat" cellspacing="0" width="100%">
         <thead>
         <tr>
@@ -79,9 +84,5 @@
 </div>
 
 </body>
-
-<header>
-    <div id="header"></div>
-</header>
 
 </html>

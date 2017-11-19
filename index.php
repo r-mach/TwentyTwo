@@ -23,6 +23,11 @@
     <script type="text/javascript" src="/TwentyTwo/js/global.js"></script>
 
 </head>
+
+<header>
+    <?php include 'views/navbar.php'; ?>
+</header>
+
 <body>
 
 <div class="container-fluid">
@@ -32,15 +37,10 @@
         </div>
         <br>
         <p style="text-align: center">Découvrez sans plus attendre les règles <strong>officielles</strong> du 22.</p>
-        <img src="images/logoEM.png" class="img-responsive displayed" alt="Logo ENSEIRB">
+        <img src="images/logoEM.png" class="img-responsive displayed img-anim" alt="Logo ENSEIRB">
     </div>
 </div>
 
-
 </body>
-
-<header>
-    <div id="header"></div>
-</header>
 
 </html>

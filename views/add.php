@@ -17,6 +17,11 @@
     <!-- Local JS File -->
     <script type="text/javascript" src="/TwentyTwo/js/global.js"></script>
 </head>
+
+<header>
+    <?php include 'navbar.php'; ?>
+</header>
+
 <body>
 
 <!--Remaining section-->
@@ -28,7 +33,7 @@
         </div>
         <div class="col-sm-6">
             <h2><strong>Formulaire d'ajout</strong></h2><br>
-            <form action="top.html" method="GET">
+            <form action="top.php" method="GET">
                 <div class="form-group" style="padding-top: 20px">
                     <div class="row">
                         <div class="col-sm-4">
@@ -84,9 +89,5 @@
 </div>
 
 </body>
-
-<header>
-    <div id="header"></div>
-</header>
 
 </html>

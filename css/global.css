@@ -9,4 +9,20 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
+    height: 30%;
+}
+
+
+.img-anim {
+    width: 30%;
+    height: 30%;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+
+.img-anim:hover {
+    transform: rotate(360deg);
+    width: 50%;
+    height: 50%;
 }
